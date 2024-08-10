@@ -41,7 +41,7 @@ nav ul li {
 }
 
 .small-text {
-    font-size: 0.9rem;
+    font-size: 1.9rem;
 }
 
 .discord {
@@ -51,6 +51,7 @@ nav ul li {
     padding: 10px;
     border-radius: 10px;
     background-color: rgba(0, 0, 0, 0.7);
+    font-size: 19px;
 }
 
 .discord a {
@@ -66,6 +67,7 @@ nav ul li {
 
 .join .button, .join p, .team p, .gallery h2 {
     color: white;
+    font-size: 20px;
 }
 
 .button {
@@ -112,8 +114,8 @@ nav ul li {
 }
 
 footer {
-    text-align: center;
-    padding: 20px;
+    text-align: right;
+    padding: 0.5%;
     background-color: #333;
     color: white;
 }
