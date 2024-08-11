@@ -38,6 +38,7 @@ nav ul li {
     padding: 50px;
     background: url('images/backgrounds/background1.png') no-repeat center center/cover;
     color: white;
+    height: 60vh;
 }
 
 .small-text {

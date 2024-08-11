@@ -1,0 +1,5 @@
+RewriteEngine on
+RewriteRule ^home index.html [NC]
+RewriteRule ^pravidla pravidla.html [NC]
+RewriteRule ^vip vip.html [NC]
+RewriteRule ^info informace.html [NC]
