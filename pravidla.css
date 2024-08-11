@@ -70,7 +70,7 @@ header nav ul li a:hover {
     border-left: 8px solid transparent;
     border-right: 8px solid transparent;
     border-top: 8px solid white;
-    transition: transform 0.3s ease-in-out; /* Plynulá rotace trojúhelníčku */
+    transition: transform 0.3s ease-in-out; 
 }
 
 .rule-title:hover .triangle {
@@ -82,20 +82,20 @@ header nav ul li a:hover {
     font-size: 18px;
     line-height: 1.6;
     background-color: rgba(0, 0, 0, 0.5);
-    padding: 0 15px; /* Odstranění paddingu při zavření */
+    padding: 0 15px; 
     border-radius: 5px;
     margin-top: 10px;
     overflow: hidden;
     max-height: 0;
-    transition: max-height 0.5s ease-in-out, padding 0.5s ease-in-out; /* Plynulé rozbalení obsahu */
+    transition: max-height 0.5s ease-in-out, padding 0.5s ease-in-out; 
 }
 
 .rule-content.visible {
     display: block;
-    padding: 15px; /* Obnovení paddingu při rozvinutí */
-    max-height: 1000px; /* Plynulé rozvinutí obsahu */
+    padding: 15px; 
+    max-height: 1000px; 
 }
 
 .rule-title.active .triangle {
-    transform: rotate(90deg); /* Rotace trojúhelníčku doprava při rozvinutí */
+    transform: rotate(90deg); 
 }
