@@ -25,8 +25,19 @@ header {
 
 nav ul {
     list-style: none;
+    padding: 0;
+    margin: 0;
     display: flex;
     gap: 20px;
+}
+
+nav ul li a {
+    color: white; /* Barva odkazu v normálním stavu */
+    text-decoration: none;
+}
+
+nav ul li a.active {
+    color: red; /* Barva odkazu, když je aktivní */
 }
 
 nav ul li {
@@ -42,17 +53,18 @@ nav ul li {
 }
 
 .small-text {
-    font-size: 1.9rem;
+    font-size: 2.3rem;
 }
 
 .discord {
-    display: inline-flex; /* inline-flex, aby se box přizpůsobil obsahu */
+    display: inline-flex;
     align-items: center;
-    margin: 20px auto; /* auto pro zarovnání na střed */
+    margin: 20px auto;
     padding: 10px;
     border-radius: 10px;
     background-color: rgba(0, 0, 0, 0.7);
     font-size: 19px;
+    font-family: 'Nunito', sans-serif;
 }
 
 .discord a {
@@ -71,6 +83,14 @@ nav ul li {
     font-size: 20px;
 }
 
+.team {
+    height: 40vh;  
+}
+
+.join {
+    height: 15vh;
+}
+
 .button {
     display: inline-block;
     padding: 10px 20px;
@@ -78,7 +98,7 @@ nav ul li {
     color: white;
     border-radius: 5px;
     text-decoration: none;
-    margin-left: 0; /* odstraněn margin-left pro zarovnání na střed */
+    margin-left: 0;
 }
 
 .button:hover {
@@ -97,10 +117,10 @@ nav ul li {
 
 .image-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 sloupce */
+    grid-template-columns: repeat(3, 1fr); 
     gap: 10px;
     margin: 0 auto;
-    max-width: 97%; /* Nastavíme maximální šířku galerie */
+    max-width: 97%; 
 }
 
 .image-item img {
@@ -144,10 +164,10 @@ footer {
 .text-button {
     display: flex;
     align-items: center;
-    justify-content: center; /* zarovnání na střed */
+    justify-content: center;
     margin: 20px 0;
 }
 
 .text-button p {
-    margin-right: 20px; /* Odstup textu od tlačítka */
+    margin-right: 20px;
 }

@@ -1,0 +1,101 @@
+body {
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: white;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+header nav ul li a.active {
+    color: red;
+}
+
+header nav ul li a:hover {
+    color: #ffaaaa;
+}
+
+.intro.custom-intro-background {
+    text-align: center;
+    padding: 100px 20px;
+    background: url('images/backgrounds/background4.png') no-repeat center center/cover;
+    color: white;
+    height: 60vh;
+}
+
+.rules-section.custom-rules-background {
+    padding: 50px 0;
+    width: 100vw;
+    margin: 0 auto;
+    background: url('images/backgrounds/background3.jpeg') repeat-y center top;
+    background-size: cover;
+    color: white;
+}
+
+.rule {
+    margin-bottom: 20px;
+    max-width: 800px;
+    margin: 0 auto 20px auto;
+}
+
+.rule-title {
+    font-size: 24px;
+    font-family: 'Nunito', sans-serif;
+    cursor: pointer;
+    margin-bottom: 10px;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.triangle {
+    width: 0;
+    height: 0;
+    margin-right: 10px;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-top: 8px solid white;
+    transition: transform 0.3s ease-in-out; /* Plynulá rotace trojúhelníčku */
+}
+
+.rule-title:hover .triangle {
+    transform: scale(1.1);
+}
+
+.rule-content {
+    display: none;
+    font-size: 18px;
+    line-height: 1.6;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 0 15px; /* Odstranění paddingu při zavření */
+    border-radius: 5px;
+    margin-top: 10px;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.5s ease-in-out, padding 0.5s ease-in-out; /* Plynulé rozbalení obsahu */
+}
+
+.rule-content.visible {
+    display: block;
+    padding: 15px; /* Obnovení paddingu při rozvinutí */
+    max-height: 1000px; /* Plynulé rozvinutí obsahu */
+}
+
+.rule-title.active .triangle {
+    transform: rotate(90deg); /* Rotace trojúhelníčku doprava při rozvinutí */
+}
